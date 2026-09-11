@@ -11,6 +11,13 @@ def client():
     return TestClient(app)
 
 
+def test_root(client):
+    """Test root endpoint returns running message."""
+    response = client.get("/")
+    assert response.status_code == 200
+    assert response.json() == {"message": "Urja Meter API is running"}
+
+
 def test_health_check(client):
     """Test health check returns status: ok."""
     response = client.get("/health")

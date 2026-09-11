@@ -50,6 +50,11 @@ app = FastAPI(
 )
 
 
+@app.get("/", tags=["System"])
+def root() -> dict:
+    return {"message": "Urja Meter API is running"}
+
+
 @app.get("/health", tags=["System"])
 def health_check() -> dict:
     return {"status": "ok"}

@@ -35,6 +35,7 @@ Urja Meter Ops Portal (https://urja-ops.flockenergy.tech)
 
 | Method | Endpoint | Description | Sample Output |
 |---|---|---|---|
+| `GET` | `/` | Service root status | `{"message": "Urja Meter API is running"}` |
 | `GET` | `/health` | Service health status | `{"status": "ok"}` |
 | `GET` | `/api/v1/meters` | List all meters (dynamically paginated) | `[{"meter_id": "J100000", ...}]` |
 | `GET` | `/api/v1/meters/{meter_id}` | Meter details & 7-level electrical hierarchy | `{"meter_id": "...", "hierarchy": {...}}` |
