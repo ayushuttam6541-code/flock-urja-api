@@ -8,6 +8,8 @@ This service acts as an **API Adapter** in front of the existing **Urja Meter Op
 
 Live URL: https://flock-urja-api.onrender.com
 
+video : https://www.loom.com/share/7a5bba6a3f3f432abcce642633fe83f9
+
 ## 1. Architecture
 
 ```
