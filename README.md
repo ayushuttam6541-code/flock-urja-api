@@ -6,6 +6,8 @@ This service acts as an **API Adapter** in front of the existing **Urja Meter Op
 
 ---
 
+Live URL: https://flock-urja-api.onrender.com
+
 ## 1. Architecture
 
 ```
@@ -60,8 +62,7 @@ cd flock-urja-api
 
 # Create & activate virtual environment
 python -m venv .venv
-source .venv/bin/activate    # Linux / macOS
-.\.venv\Scripts\activate     # Windows PowerShell
+.\.venv\Scripts\activate     
 
 # Install dependencies
 pip install -r requirements.txt
@@ -122,3 +123,7 @@ All 13 tests verify:
 4. **Session Resilience**:
    - Upstream CSRF check requires `Origin` and `Referer` headers on `/login`.
    - Cookies are persisted and automatically renewed if a session expires.
+
+
+  ## Author
+  Ayush Raj
